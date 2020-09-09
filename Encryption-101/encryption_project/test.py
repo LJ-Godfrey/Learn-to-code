@@ -13,7 +13,8 @@ elif method.lower() == "xor":
         key = int(input("Key: "))
         print(en.xor(string, key))
     except:
-        print("Error: Key needs to be a number")
+        print("Error: Key needs to be a number.")
+        sys.exit()
 elif method.lower() == "rotate":
     print(en.rotate(string))
 else:
