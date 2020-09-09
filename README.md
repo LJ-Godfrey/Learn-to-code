@@ -1,4 +1,7 @@
 # Learn-to-code
+
+Joel, your stuff is under 'Encryption-101'
+
 # What you need to have installed before continuing
     # - Python 3 (3.7.9 is what I used)
     # - Text Editor (Visual Studio Code has good syntax colouring and is helpful with autofilling)

@@ -1,4 +1,5 @@
 import encrypt as en
+import sys
 
 method = input("Method: ")
 string = input("String: ")
@@ -13,4 +14,5 @@ elif method.lower() == "xor":
 elif method.lower() == "rotate":
     print(en.rotate(string))
 else:
-    print("Error incorrect method")
+    print("Error incorrect method. Please enter one of: Caesar, Reverse, Xor or Rotate")
+    print("Usage: python3 {} <caesar|reverse|xor|rotate>".format(sys.argv[0]))
