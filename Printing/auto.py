@@ -29,7 +29,7 @@ def print_prog(name):
 def inp_prog(name, infile):
     os.system(PATH + " " + name + ".py < " + infile + " > /tmp/" + name + ".test")
 
-def prog_check(name, expected):
+def out_check(name, expected):
     f = open("/tmp/" + name + ".test", 'r')
     out = ''.join(f.readlines())
     out = out[:len(out)-1]
