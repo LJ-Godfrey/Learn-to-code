@@ -9,8 +9,11 @@ if method.lower() == "caesar":
 elif method.lower() == "reverse":
     print(en.reverse(string))
 elif method.lower() == "xor":
-    key = int(input("Key: "))
-    print(en.xor(string, key))
+    try:
+        key = int(input("Key: "))
+        print(en.xor(string, key))
+    except:
+        print("Error: Key needs to be a number")
 elif method.lower() == "rotate":
     print(en.rotate(string))
 else:
